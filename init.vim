@@ -80,8 +80,21 @@ nnoremap Q @q   " Use Q to execute default register.
 call plug#begin('~/.local/share/nvim/plugged')
 
 " Make sure you use single quotes
-
+"
+"https://github.com/airblade/vim-gitgutter
 Plug 'airblade/vim-gitgutter'
-
+set updatetime=100
+" speed things up a bit
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdTree'
+nmap <C-n> :NERDTreeToggle<CR>
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#ignore_case = 1
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 " Initialize plugin system
 call plug#end()
+
