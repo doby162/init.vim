@@ -64,7 +64,7 @@ endfunc
 " Toggle between normal and relative numbering.
 nnoremap <leader>r :call NumberToggle()<cr>
 
-nnoremap ; :    " Use ; for commands.
+nnoremap ; :
 nnoremap Q @q   " Use Q to execute default register.
 
 
