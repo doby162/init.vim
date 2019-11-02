@@ -92,7 +92,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdTree'
-Plug 'guns/vim-clojure-static'
+Plug 'tpope/vim-fireplace'
+Plug 'venantius/vim-cljfmt'
 Plug 'kien/rainbow_parentheses.vim'
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
@@ -116,9 +117,7 @@ let g:rbpt_colorpairs = [
     \ ['darkcyan',    'SeaGreen3'],
     \ ['gray',        'RoyalBlue3'],
     \ ]
-
 let g:rbpt_max = 16
-
 let g:rbpt_loadcmd_toggle = 0
 nmap <C-n> :NERDTreeToggle<CR>
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
