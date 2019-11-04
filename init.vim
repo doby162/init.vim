@@ -128,3 +128,8 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 " Initialize plugin system
 call plug#end()
 
+let &colorcolumn="80,120,121"
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+"this has to go at the end becuase otherwise the highlight color gets set back
+"to red, which makes me wonder if this is clobbering some other
+"highlight color
