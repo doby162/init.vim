@@ -125,6 +125,7 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#ignore_case = 1
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+Plug 'tpope/vim-commentary'
 " Initialize plugin system
 call plug#end()
 
