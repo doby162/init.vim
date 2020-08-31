@@ -126,6 +126,7 @@ let g:deoplete#ignore_case = 1
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 Plug 'tpope/vim-commentary'
+Plug 'psf/black'
 " Initialize plugin system
 call plug#end()
 
@@ -134,3 +135,6 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 "this has to go at the end becuase otherwise the highlight color gets set back
 "to red, which makes me wonder if this is clobbering some other
 "highlight color
+autocmd BufWritePre *.py execute ':Black'
+
+let @p=':Eval'
